@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профессиональные IT-услуги | Современные решения</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation"></div>
+    
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1 class="main-title">Профессиональные IT-услуги</h1>
+                <p class="tagline">Современные решения для вашего бизнеса</p>
+                <div class="decoration-line"></div>
+            </div>
+        </header>
+
+        <section class="about">
+            <div class="section-header">
+                <h2>Обо мне</h2>
+                <div class="section-divider"></div>
+            </div>
+            <p>Я профессиональный разработчик с опытом создания современных веб-решений. Гарантирую качественное выполнение проектов с вниманием к деталям и соблюдением сроков.</p>
+        </section>
+
+        <section class="services">
+            <div class="section-header">
+                <h2>Мои услуги</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-icon">🌐</div>
+                    <h3>Разработка сайтов</h3>
+                    <p>Создание современных лендингов и многостраничных сайтов</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">💻</div>
+                    <h3>Верстка</h3>
+                    <p>Адаптивная кроссбраузерная верстка (HTML/CSS/JS)</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">⚡</div>
+                    <h3>Скрипты</h3>
+                    <p>Написание скриптов и автоматизация бизнес-процессов</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <div class="section-header">
+                <h2>Сделать заказ</h2>
+                <div class="section-divider"></div>
+            </div>
+            <p class="form-description">Заполните форму ниже, и я свяжусь с вами в ближайшее время</p>
+            
+            <form action="https://formspree.io/f/mvgngaok" method="POST" class="order-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя *</label>
+                        <input type="text" id="name" name="name" required placeholder="Иван Иванов">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Ваш email *</label>
+                        <input type="email" id="email" name="email" required placeholder="ivan@example.com">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Ваш телефон</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+7 (999) 999-99-99">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service_type">Тип услуги</label>
+                        <select id="service_type" name="service_type">
+                            <option value="">Выберите услугу</option>
+                            <option value="Разработка сайтов">Разработка сайтов</option>
+                            <option value="Верстка">Верстка</option>
+                            <option value="Скрипты">Скрипты</option>
+                            <option value="Другое">Другое</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="budget">Бюджет (руб.)</label>
+                    <input type="number" id="budget" name="budget" placeholder="5000">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Описание заказа *</label>
+                    <textarea id="message" name="message" rows="6" required placeholder="Опишите подробно, что вам нужно сделать..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <span class="btn-text">Отправить заказ</span>
+                    <div class="btn-loader"></div>
+                </button>
+            </form>
+        </section>
+
+        <footer>
+            <div class="contact-info">
+                <h3>Контакты</h3>
+                <div class="contact-item">
+                    <span class="contact-icon">📧</span>
+                    <span>resulsopyyev71@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">⏱️</span>
+                    <span>Время ответа: в течение 2 часов в рабочее время</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
